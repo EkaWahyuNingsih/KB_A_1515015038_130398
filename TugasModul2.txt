@@ -1,0 +1,46 @@
+Tugas Modul 2 :
+
+1.Ubah Bahasa prolog berikut menjadi Bahasa natural:
+
+  a.	Orang(dian) 		= dian adalah orang
+  b.	mobil(atoz) 		= atoz adalah merk mobil
+  c.	suka(dian,atoz)		= dian suka mobil merk atoz
+  d.	dijual(atoz)		= atoz dijual
+
+  e.	dapat_membeli(X,Y):-
+	orang(X),
+	mobil(Y),
+	suka(X,Y),
+	dijual(Y).		= X dapat membeli Y jika :
+				  X adalah variabel pengganti orang dan
+				  Y adalah variabel pengganti mobil dan
+				  X menyukai Y dan Y dijual.
+
+f.	suka(_,Apa).		= Setiap orang menyukai apa
+
+
+2.Ubah Bahasa natural berikut kedalam Bahasa prolog: 
+
+  a. Ricky mempunyai hobi bermain catur.				= hobi(ricky,catur).
+  b. Embang orangnya pemalas. 						= pemalas(embang).
+  c. Yusida seorang vegetarian.						= vegetarian(yusida).
+  d. Kusdiar pandai bermain gitar.					= pandai(kusdiar,gitar).
+
+  e. Mobil yang berwarna merah itu milik Sadek, bermerk BMW. 		= milik(mobil,sadek), 
+							      		  warna(mobil,merah),
+  							      		  merk(mobil,BMW).
+	
+  f. Awan seorang pemain piano, berasal dari Pontianak bersuku Jawa. 	= pemain(awan,piano), 
+									  berasal(awan,pontianak), 
+									  suku(Awan,Jawa).
+
+
+  g. Seseorang dikatakan baik jika mempunyai sifat penyayang dan dermawan. = dikatakan(orang,pintar):-
+									     sifat(Orang,Penyayang),
+									     sifat(Orang,Dermawan).
+
+  h. Seseorang dikatakan pintar jika salah satu dari Matematika atau IPA atau IPS mendapat nilai tinggi. = dikatakan(Orang,Pintar):-
+													   dapat(Matematika,Tinggi);
+													   dapat(Ipa,Tinggi);
+													   dapat(Ips,Tinggi).
+  i. Setiap orang pasti mati.  	= setiap(Orang,Mati).	

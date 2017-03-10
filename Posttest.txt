@@ -1,0 +1,36 @@
+TugasPosttest
+
+1. Jelaskan keyword pada prolog !
+
+   a.  Rules  	 :  Suatu pernyataan yang menunjukkan bagaimana fakta-fakta berinteraksi 
+		    satu dengan yang lain untuk membentuk suatu kesimpulan 
+
+   b.  Solutions :  Solusi adalah hasil yang diberikan setelah program dijalankan.
+
+   c.  Variable	 :  Terdapat 2 variable yaitu variable bernama dan variable tak bernama.
+
+   d.  Fact	 :  Suatu kenyataan atau kebenaran yang diketahui.Fakta menyatakan hubungan/relasi
+		    antara dua obyek atau lebih atau menunjukkan sifat suatu obyek.
+
+   e.  Domain	 :  adalah type data.
+
+   f.  char	 :  Karakter tunggal diapit tanda kutip tunggal ‘a’, ‘b’, ‘\58’.
+
+   g.  integer	 :  Bilangan bulat dari –32768 sampai dengan 32767. Integer heksadesimal diawali dengan tanda ($).
+
+   h.  real	 :  Bilangan real dari 1 x 10-307 sampai 1 x 10308. Jika integer diberikan pada argumen real maka akan langsung diubah ke real.
+
+   i.  string    :  Rentetan karakter tang diapit tanda kutip ganda seperti “Jalan Sangkuriang”. Panjang maksimum 255 karakter,
+		    sedangkan jika string tersebut dari file, atau terkandung dalam program, bisa mencapai 64 Kbyte.
+
+   j.  symbol	 :  Rangkaian huruf, angka dan garis bawah, asalkan karakter pertama huruf kecil, tidak mengandung spasi/karakter khusus.
+
+   k.  Section Goal :  Secara esensial, section goal sama dengan body dari sebuah aturan (rule), yaitu sederetan sub-sub goal. 
+
+		       Perbedaan antara section goal dengan suatu aturan adalah setelah kata kunci goal tidak diikuti tanda :- dan Visual Prolog
+		       secara otomatis mengeksekusi goal ketika program dijalankan.
+
+   l. Rekursi	 :Prosedur rekursi adalah prosedur yang di dalamnya ada pemanggilan terhadap dirinya sendiri.
+
+   m. nondeterm	 :untuk memberi tahu compiler bahwa predikat tersebut mempunyai lebih dari satu kemungkinan jawaban (non-deterministik).
+   n. IF	 : Syntax ini digunakan untuk membuat kondisi. 
