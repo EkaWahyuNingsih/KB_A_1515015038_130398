@@ -36,11 +36,10 @@ f.	suka(_,Apa).		= Setiap orang menyukai apa
 
 
   g. Seseorang dikatakan baik jika mempunyai sifat penyayang dan dermawan. = dikatakan(orang,pintar):-
-									     sifat(Orang,Penyayang),
+							     		     sifat(Orang,Penyayang), 
 									     sifat(Orang,Dermawan).
 
-  h. Seseorang dikatakan pintar jika salah satu dari Matematika atau IPA atau IPS mendapat nilai tinggi. = dikatakan(Orang,Pintar):-
-													   dapat(Matematika,Tinggi);
-													   dapat(Ipa,Tinggi);
-													   dapat(Ips,Tinggi).
-  i. Setiap orang pasti mati.  	= setiap(Orang,Mati).	
+  h. Seseorang dikatakan pintar jika salah satu dari Matematika atau IPA atau IPS mendapat nilai tinggi. = nilaitinggi(Y, MTK);
+													   nilaitinggi(Y, IPA);
+													   nilaitinggi(Y, IPS);
+  i. Setiap orang pasti mati.  	= pasti(Orang,Mati).	
