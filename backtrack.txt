@@ -1,0 +1,43 @@
+clauses
+  buy_car(Model,Color):-
+	car(Model,Color,Price),
+	colors(Color,sexy),!,
+	Price > 25000.
+
+  car(maserati,green,25000).
+  car(corvette,black,24000).
+  car(corvette,red,26000).
+  car(porsche,red,24000).
+
+  colors(red,sexy).
+  colors(black,mean).
+  colors(green,preppy).
+
+goal
+  buy_car(corvette,Y).
+
+
+
+1. Program ini adalah program mencari warna  dari sebuah mobil yang memiliki inputan model mobil corvette yang akan dicari warnanya dengan menggunakan variabel Y.
+
+2. Dengan ketentuan mobil harus memiliki model, warna, dan harga. warna mobil harus tergolong dalam kategory sexy, dimana kategori sexy ini tergolong warna red.
+   dan ketentuan harga lebih ddari 25000 tidak perlu dialankan karena terdapat fungssi not disana.
+   Jadi pelacakan berhenti di rules kedua karena terdapat warna dengan kategori sexy.
+
+3. Program yang akan dibaca lebih awal ialah :
+	
+	1.car(maserati, green,25000).
+
+	  dalam rules pertama ini memenuhi rules karena memiliki model, warna, dan harga tetapi warna yang diminta ialah kategori sexy. sedangkan kategori sexy adalah warna red
+	  tetapi pada rules ini adalahh green (backtrack)
+
+	2.car(convette,black,24000).
+
+	  dalam rules pertama ini memenuhi rules karena memiliki model, warna, dan harga tetapi warna yang diminta ialah kategori sexy. sedangkan kategori sexy adalah warna red
+	  tetapi pada rules ini adalahh black (backtrack)
+
+	3.car(convette,red,26000).
+	  dalam rules ini memenuhi rules karena memiliki model, warna, dan harga.
+	  rules kedua mencari warna yang diminta pun terpenuhi yaitu kategori sexy adalah red
+	  dan rules ketiga pun berhenti karena terdapat fungsi not yang berarti harus berhenti sampai rules kedua saja. (Stop)
+4.  Semua rules telah terpenuhi dan program akan berhenti melacak dan goalnya adalah buy_car (corvette, Y) = red
